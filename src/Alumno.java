@@ -8,7 +8,7 @@ public class Alumno implements Serializable {
     private double nota1;
     private double nota2;
     private double nota3;
-    private double promedio; // Calculado, no necesita ser serializado
+    private double promedio; // Promedio de las 3 notas
 
     public Alumno( String nombre, String apellido, double nota1, double nota2, double nota3) {
         this.id = 0;
