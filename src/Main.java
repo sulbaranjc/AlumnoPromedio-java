@@ -81,6 +81,9 @@ public class Main {
     }
 
     private static void modificarAlumno() throws IOException, ClassNotFoundException {
+        cabeceraListarAlumnos();
+        listarAlumnos();
+        pieDePagina();
         System.out.print("Ingrese el ID del alumno a modificar: ");
         int id = scannerNum.nextInt();
         List<Alumno> alumnos = GestorAlumnos.leerAlumnos();
@@ -105,29 +108,41 @@ public class Main {
         System.out.println("Alumno actualizado exitosamente.");
     }
     private static void eliminarAlumno() throws IOException, ClassNotFoundException {
+        cabeceraListarAlumnos();
+        listarAlumnos();
+        pieDePagina();
         System.out.print("Ingrese el ID del alumno a eliminar: ");
         int id = scannerNum.nextInt();
         GestorAlumnos.eliminarAlumno(id);
         System.out.println("Alumno eliminado exitosamente.");
     }
-    private static void mostrarAlumnos() throws IOException, ClassNotFoundException {
+    private static void listarAlumnos() throws IOException, ClassNotFoundException {
         List<Alumno> alumnos = GestorAlumnos.leerAlumnos();
         if (alumnos.isEmpty()) {
             System.out.println("No hay alumnos registrados.");
             return;
         }
-        cabeceraListarAlumnos();
-    for (Alumno alumno : alumnos) {
+        for (Alumno alumno : alumnos) {
             System.out.println(alumno.toString());
         }
-    pausa();
+    }
+
+    private static void mostrarAlumnos() throws IOException, ClassNotFoundException {
+        cabeceraListarAlumnos();
+        listarAlumnos();
+        pieDePagina();
+        pausa();
     }
     private static void cabeceraListarAlumnos() {
         // Salida de datos con variable local
-        System.out.println("\n\n                        Listado de Alumnos");
-        System.out.println("=================================================================================");
-        System.out.println("ID  Nombre                Apellido            Nota 1   Nota 2   Nota 3   Promedio");
-        System.out.println("=================================================================================");
+        System.out.println("\n\n                                Listado de Alumnos");
+        System.out.println("====================================================================================");
+        System.out.println("ID  Nombre                Apellido             Nota 1   Nota 2     Nota 3   Promedio");
+        System.out.println("====================================================================================");
+    }
+    private static void pieDePagina() {
+        System.out.println("====================================================================================");
+        System.out.println("====================================================================================");
     }
     private static void pausa() {
         System.out.println();

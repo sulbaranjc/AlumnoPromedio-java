@@ -82,6 +82,6 @@ public class Alumno implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("%-4d %-20s %-20s %.2f    %.2f      %.2f     %.2f", id, nombre, apellido, nota1, nota2, nota3, promedio);
+        return String.format("%-4d %-20s %-20s %5.2f    %5.2f      %5.2f     %5.1f", id, nombre, apellido, nota1, nota2, nota3, promedio);
     }
 }
