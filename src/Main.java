@@ -1,9 +1,13 @@
+/*
+Ejemplo de un gestor de alumnos que guarda los datos en un archivo binario.
+
+
+ */
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import java.io.FileNotFoundException;
-import java.io.EOFException;
 import java.lang.ClassNotFoundException;
 
 public class Main {
