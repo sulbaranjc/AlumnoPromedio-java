@@ -30,9 +30,6 @@ public class Main {
                     case 4:
                         eliminarAlumno();
                         break;
-                    case 9:
-                        // Mockear data, si aplica
-                        break;
                     case 0:
                         salir = true;
                         break;
@@ -58,7 +55,6 @@ public class Main {
         System.out.println("2. Listar Alumnos");
         System.out.println("3. Modifier Alumno");
         System.out.println("4. Eliminar Alumno");
-        System.out.println("9. Moquear Data Ejemplo");
         System.out.println("0. Salir");
         System.out.println();
         System.out.print("Ingrese una opcion: ");
