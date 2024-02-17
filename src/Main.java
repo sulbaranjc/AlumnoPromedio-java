@@ -79,18 +79,7 @@ public class Main {
         GestorAlumnos.agregarAlumno(alumno);
         System.out.println("Alumno agregado exitosamente.");
     }
-    private static void mostrarAlumnos() throws IOException, ClassNotFoundException {
-        List<Alumno> alumnos = GestorAlumnos.leerAlumnos();
-        if (alumnos.isEmpty()) {
-            System.out.println("No hay alumnos registrados.");
-            return;
-        }
-        System.out.println("Lista de Alumnos");
-        System.out.println("================");
-        for (Alumno alumno : alumnos) {
-            System.out.println(alumno);
-        }
-    }
+
     private static void modificarAlumno() throws IOException, ClassNotFoundException {
         System.out.print("Ingrese el ID del alumno a modificar: ");
         int id = scannerNum.nextInt();
@@ -120,6 +109,30 @@ public class Main {
         int id = scannerNum.nextInt();
         GestorAlumnos.eliminarAlumno(id);
         System.out.println("Alumno eliminado exitosamente.");
+    }
+    private static void mostrarAlumnos() throws IOException, ClassNotFoundException {
+        List<Alumno> alumnos = GestorAlumnos.leerAlumnos();
+        if (alumnos.isEmpty()) {
+            System.out.println("No hay alumnos registrados.");
+            return;
+        }
+        cabeceraListarAlumnos();
+    for (Alumno alumno : alumnos) {
+            System.out.println(alumno.toString());
+        }
+    pausa();
+    }
+    private static void cabeceraListarAlumnos() {
+        // Salida de datos con variable local
+        System.out.println("\n\n                        Listado de Alumnos");
+        System.out.println("=================================================================================");
+        System.out.println("ID  Nombre                Apellido            Nota 1   Nota 2   Nota 3   Promedio");
+        System.out.println("=================================================================================");
+    }
+    private static void pausa() {
+        System.out.println();
+        System.out.println("Presione ENTER para continuar...");
+        scannerStr.nextLine();
     }
 
 }

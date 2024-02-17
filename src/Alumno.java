@@ -8,7 +8,7 @@ public class Alumno implements Serializable {
     private double nota1;
     private double nota2;
     private double nota3;
-    private transient double promedio; // Calculado, no necesita ser serializado
+    private double promedio; // Calculado, no necesita ser serializado
 
     public Alumno( String nombre, String apellido, double nota1, double nota2, double nota3) {
         this.id = 0;
@@ -82,6 +82,6 @@ public class Alumno implements Serializable {
 
     @Override
     public String toString() {
-        return "ID: " + id + " | Nombre: " + nombre + " " + apellido + " | Notas: " + nota1 + ", " + nota2 + ", " + nota3 + " | Promedio: " + calcularPromedio();
+        return String.format("%-4d %-20s %-20s %.2f    %.2f      %.2f     %.2f", id, nombre, apellido, nota1, nota2, nota3, promedio);
     }
 }

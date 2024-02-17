@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5fe9d05-b4f2-4faf-91ce-38007fbf929b" name="Changes" comment="excepciones manejadas desde main" />
+    <list default="true" id="e5fe9d05-b4f2-4faf-91ce-38007fbf929b" name="Changes" comment="excepciones manejadas desde main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alumnos.bin" beforeDir="false" afterPath="$PROJECT_DIR$/alumnos.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/MisDocumentos/Dropbox/Dropbox/ILERNA/daw01/java/AlumnoPromedio-java",
+    "last_opened_file_path": "D:/MisDocumentos/Dropbox/Dropbox/ILERNA/daw01/java/Cochescccc",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -79,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708183554391</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="excepciones manejadas desde main">
+      <option name="closed" value="true" />
+      <created>1708184723000</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708184723000</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
